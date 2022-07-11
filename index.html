@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Forum</title>
+        <style>
+            .publish_ticket {
+                width: 20rem;
+                display: grid;
+                grid-template-columns: 2fr, 1fr;
+                gap: .5rem;
+            }
+            .publish_ticket_message {
+                height: 8rem;
+                width: 20rem;
+            }
+            .publish_ticket_btn {
+                width: 8rem;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Forum</h1>
+        <div class="post_ticket">
+            <h2>Poster un ticket</h2>
+            <form action="" class="publish_ticket">
+                <p class="publish_ticket_date">publié le 07 Juillet 2022</p>
+                <p class="publish_ticket_user">par User01</p>
+                <label for="">Tag</label>
+                <input type="text" class="list_ticket_tag">
+                <textarea type="text" class="publish_ticket_message"></textarea>
+                <button class="publish_ticket_btn">Publier</button>
+            </form>
+        </div>
+        <div class="list_ticket">
+            <h2>Liste des tickets</h2>
+            <label for="">Tag: </label>
+            <p class="list_ticket-tag">météo</p>
+            <p class="list_ticket-message"></p>
+        </div>
+
+
+        <sript src="main.js"></script>
+    <body>
+</html>

@@ -1,0 +1,101 @@
+/*_________________________ STYLE GENERALE _________________________*/
+body {
+    font-family: sans-serif;
+    margin: 0;
+}
+
+header {
+    background: rgb(248, 148, 47);
+    padding: 1rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: .5rem;
+}
+
+main {
+    padding: 4rem 0rem;
+    display: flex;
+    flex-direction: column;
+}
+
+/*_________________________ STYLE Connexion _________________________*/
+.connexion {
+    display: flex;
+    justify-content: center;
+    background: #ff800029;
+    margin:  6rem 0;
+    height: 15rem;
+}
+
+.form_connexion {
+    width: 20rem;
+    position: absolute;
+    top: 18rem;
+    left: calc(50% - 12rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-self: center;
+    align-items: center;
+    background:linear-gradient(120deg, rgb(248, 148, 47) 50%, rgb(245, 78, 60) 100%);;
+    color: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0px 3px 8px 0px #9a5c1f;
+}
+
+.form_connexion_titre {
+    margin-top: 0;
+    margin-bottom: 2rem;
+}
+
+.champs {
+    display: flex;
+    flex-direction: column;
+    width: 15rem;
+}
+
+.label {
+    padding-bottom: .5rem;
+}
+
+.input {
+    appearance: none;
+    border: none;
+    height: 2rem;
+    border-radius: .3rem;
+}
+
+.form_connection_password {
+    margin-top: 2rem;
+}
+
+.btn {
+    margin-top: 2rem;
+    padding: .8rem;
+    border: none;
+    border-radius: .3rem;
+    background: #d52020;
+    color: white;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    box-shadow: 0px 3px 8px 0px #862c44;
+}
+/*_________________________ STYLE Tickets _________________________*/
+.ticket {
+    padding: 2rem 4rem;
+}
+
+/*_________________________ STYLE Footer _________________________*/
+footer {
+    display: flex;
+    justify-content: center;
+    background: #ff800029;
+    padding: 2rem 2rem;
+    color: grey;
+    font-weight: 200;
+}

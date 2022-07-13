@@ -6,43 +6,42 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
         <title>Forum</title>
-        <style>
-            .publish_ticket {
-                width: 20rem;
-                display: grid;
-                grid-template-columns: 2fr, 1fr;
-                gap: .5rem;
-            }
-            .publish_ticket_message {
-                height: 8rem;
-                width: 20rem;
-            }
-            .publish_ticket_btn {
-                width: 8rem;
-            }
-        </style>
     </head>
+
     <body>
-        <h1>Forum</h1>
-        <div class="post_ticket">
-            <h2>Poster un ticket</h2>
-            <form action="" class="publish_ticket">
-                <p class="publish_ticket_date">publié le 07 Juillet 2022</p>
-                <p class="publish_ticket_user">par User01</p>
-                <label for="">Tag</label>
-                <input type="text" class="list_ticket_tag">
-                <textarea type="text" class="publish_ticket_message"></textarea>
-                <button class="publish_ticket_btn">Publier</button>
-            </form>
-        </div>
-        <div class="list_ticket">
-            <h2>Liste des tickets</h2>
-            <label for="">Tag: </label>
-            <p class="list_ticket-tag">météo</p>
-            <p class="list_ticket-message"></p>
-        </div>
+        <header>
+            <h1>Forum</h1>
+        </header>
 
+        <main>
 
+            <section class="connexion">
+                <form action="" class="form_connexion">
+                    <h2 class="form_connexion_titre">Connectez-vous</h2>
+                    <div class="form_connection_login champs">
+                        <label for="" class="form_connexion_login-label label">Votre login</label>
+                        <input type="text" class="form_connexion_login-input input">
+                    </div>
+                    <div class="form_connection_password champs">
+                        <label for="" class="form_connexion_password-label label">Mot de passe</label>
+                        <input type="password" class="form_connexion_password-input input">
+                    </div>
+                    <button class="btn">Connexion</button>
+                </form>
+            </section>
+
+            <section class="ticket">
+                <h2 class="ticket_titre">Les Tickets</h2>
+                <ul class="ticket_list">
+
+                </ul>
+            </section>
+
+        </main>
+
+        <footer>
+            <p>&copyBili - Cepegra - 2022</p>
+        </footer>
         <sript src="main.js"></script>
     <body>
 </html>

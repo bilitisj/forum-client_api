@@ -1,16 +1,21 @@
-const urlApi = 'http://localhost:8888/forum/forum-api_php/ticket';
-const ticketMessage = document.querySelector('.publish_ticket_message');
-const ticketUser  = document.querySelector('.publish_ticket_user');
+const urlApi = 'http://localhost:8888/forum/forum-api_php/';
 
+fetch(urlApi + 'ticket')
+.then( response => response.json())
+.then( response => {
+    console.log(response)
 //listing des tickets
-fetch(urlApi + 'categories')
-    .then(response => response.json())
-    .then(response => {
-        console.log(response)
-        let template = ''
-        response.data.forEach(category => {
-            template += `<li class="cat-item" data-id="${category.id_categorie}">${category.nom}</li>`
-        });
-        catListe.innerHTML = template
+    let template = ''
+    response.data.forEach(function(ticket){
+        template += `<li class="ticket_list-item" data-id="${ticket.id_ticket}">`
+        template += `<summary><strong>${ticket.tag}</strong> - par ${ticket.user_name} - le ${ticket.date}</summary>`
+        template += `<p>${ticket.message}</p>`
+        template += `</li>`
+
+        document.querySelector('.ticket_list').innerHTML = template
+        })
+        console.log(template);
     })
-    .catch(error => console.error(error));
+.catch(error => console.error(error));
+
+
